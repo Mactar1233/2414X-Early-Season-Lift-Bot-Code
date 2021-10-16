@@ -58,7 +58,7 @@ namespace arms::pid {
 #define ANGULAR_POINT_KP 50
 #define ANGULAR_POINT_KI 0
 #define ANGULAR_POINT_KD 0
-#define MIN_ERROR 5 // minimum error, stops robot from spinning around point
+#define MIN_ERROR 0 // minimum error, stops robot from spinning around point
 } // namespace arms::pid
 
 // Auton selector configuration constants
