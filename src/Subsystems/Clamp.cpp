@@ -4,7 +4,9 @@ pros::ADIDigitalOut piston('A');
 
 bool piston_state = false;
 
-if(master.get_digital(DIGITAL_R1)){
+void Piston_Toggle(){
+    if(master.get_digital(DIGITAL_R1)){
     piston_state = !piston_state;
     piston.set_value(piston_state);
+    }
 }
