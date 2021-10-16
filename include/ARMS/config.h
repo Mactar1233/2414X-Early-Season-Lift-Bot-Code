@@ -21,7 +21,7 @@ namespace chassis {
 #define ARC_STEP 2   // acceleration for arcs
 
 // sensors
-#define IMU_PORT 0            // port 0 for disabled
+#define ARMS_IMU_PORT 0            // port 0 for disabled
 #define ENCODER_PORTS 0, 0, 0 // port 0 for disabled
 #define EXPANDER_PORT 0
 #define JOYSTICK_THRESHOLD 10 // min value needed for joystick to move drive
@@ -58,7 +58,7 @@ namespace pid {
 #define ANGULAR_POINT_KP 50
 #define ANGULAR_POINT_KI 0
 #define ANGULAR_POINT_KD 0
-#define MIN_ERROR 5 // minimum error, stops robot from spinning around point
+#define MINIMUM_ERROR 5 // minimum error, stops robot from spinning around point
 } // namespace pid
 
 // Auton selector configuration constants

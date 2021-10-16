@@ -40,7 +40,7 @@ void init(bool debug = PID_DEBUG, double linearKP = LINEAR_KP,
           double angular_pointKP = ANGULAR_POINT_KP,
           double angular_pointKI = ANGULAR_POINT_KI,
           double angular_pointKD = ANGULAR_POINT_KD, double arcKP = ARC_KP,
-          double difKP = DIF_KP, double min_error = MIN_ERROR);
+          double difKP = DIF_KP, double min_error = MINIMUM_ERROR);
 
 } // namespace pid
 
