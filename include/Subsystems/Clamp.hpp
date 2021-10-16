@@ -1,1 +1,1 @@
-extern piston_state;
+extern bool piston_state;

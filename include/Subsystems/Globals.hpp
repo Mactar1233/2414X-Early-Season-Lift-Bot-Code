@@ -1,1 +1,0 @@
-extern pros::Controller(pros::E_CONTROLLER_MASTER)
