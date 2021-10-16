@@ -1,10 +1,10 @@
-#ifndef _ARMS_ODOM_H_
-#define _ARMS_ODOM_H_
+#ifndef _ODOM_H_
+#define _ODOM_H_
 
 #include "ARMS/config.h"
 #include <array>
 
-namespace arms::odom {
+namespace odom {
 
 extern double global_x;
 extern double global_y;
@@ -44,6 +44,6 @@ void init(bool debug = ODOM_DEBUG,
           double middle_tpi = MIDDLE_TPI, bool holonomic = HOLONOMIC,
           double exit_error = EXIT_ERROR);
 
-} // namespace arms::odom
+} // namespace odom
 
 #endif

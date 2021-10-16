@@ -1,7 +1,7 @@
-#ifndef _ARMS_ARC_H_
-#define _ARMS_ARC_H_
+#ifndef _ARC_H_
+#define _ARC_H_
 
-namespace arms::chassis {
+namespace chassis {
 
 /**
  * Move the robot in an arc with a set length, radius, and speed
@@ -33,6 +33,6 @@ void _sLeft(int arc1, int mid, int arc2, int max = 100);
  */
 void _sRight(int arc1, int mid, int arc2, int max = 100);
 
-} // namespace arms::chassis
+} // namespace chassis
 
 #endif

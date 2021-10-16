@@ -1,8 +1,8 @@
-#ifndef _ARMS_CONFIG_H_
-#define _ARMS_CONFIG_H_
+#ifndef _CONFIG_H_
+#define _CONFIG_H_
 
 // Drivetrain configuration constants
-namespace arms::chassis {
+namespace chassis {
 // negative numbers mean reversed motor
 #define LEFT_MOTORS 1, 2
 #define RIGHT_MOTORS -3, -4
@@ -25,9 +25,9 @@ namespace arms::chassis {
 #define ENCODER_PORTS 0, 0, 0 // port 0 for disabled
 #define EXPANDER_PORT 0
 #define JOYSTICK_THRESHOLD 10 // min value needed for joystick to move drive
-} // namespace arms::chassis
+} // namespace chassis
 
-namespace arms::odom {
+namespace odom {
 #define ODOM_DEBUG 1
 #define LEFT_RIGHT_DISTANCE 6.375 // only needed for non-imu setups
 #define MIDDLE_DISTANCE 5.75      // only needed if using middle tracker
@@ -36,9 +36,9 @@ namespace arms::odom {
 #define SLEW_STEP 10              // point function slew
 #define HOLONOMIC 1               // holonomic chassis odom
 #define EXIT_ERROR 10 // exit distance for moveThru and holoThru movements
-} // namespace arms::odom
+} // namespace odom
 
-namespace arms::pid {
+namespace pid {
 #define PID_DEBUG false
 
 // normal pid constants
@@ -58,15 +58,15 @@ namespace arms::pid {
 #define ANGULAR_POINT_KP 50
 #define ANGULAR_POINT_KI 0
 #define ANGULAR_POINT_KD 0
-#define MIN_ERROR 0 // minimum error, stops robot from spinning around point
-} // namespace arms::pid
+#define MIN_ERROR 5 // minimum error, stops robot from spinning around point
+} // namespace pid
 
 // Auton selector configuration constants
-namespace arms::selector {
+namespace selector {
 // Names of autonomi, up to 10
 #define AUTONS "Front", "Back", "Do Nothing"
 #define HUE 360   // Color of theme from 0-359(H part of HSV)
 #define DEFAULT 1 // Default auton numbers
-} // namespace arms::selector
+} // namespace selector
 
 #endif
