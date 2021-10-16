@@ -12,7 +12,9 @@
 #include "EZ-Template/auton_drive_functions.hpp"
 // More includes here...
 #include "autons.hpp"
-// subsystems
+#include "Clamp.hpp"
+#include "globals.hpp"
+#include "lift.hpp"
 using namespace pros;
 
 #ifdef __cplusplus
