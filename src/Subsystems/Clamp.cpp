@@ -1,12 +1,10 @@
 #include "main.h"
 
-pros::ADIAnalogIn Clamp_Piston (A);
+pros::ADIDigitalOut piston('A');
 
-bool piston_state;
-Clamp_piston.set_value(piston_state)
-if(master.get_digital(DIGITAL_R1) && piston_state == 0){
-    piston_state = 1
-    }
-if(master.get_digtal(DIGITAL_R1) && piston_state == 1){
-    piston_state = 0
+bool piston_state = false;
+
+if(master.get_digital(DIGITAL_R1)) {
+    piston_state = !piston_state;
+    piston.set_value(piston_state);
 }
