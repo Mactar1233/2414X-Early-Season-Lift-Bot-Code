@@ -4,7 +4,7 @@ License, v. 2.0. If a copy of the MPL was not distributed with this
 file, You can obtain one at http://mozilla.org/MPL/2.0/.
 */
 
-#include "main.h"
+#include "include/main.h"
 
 
 pros::controller_analog_e_t current_l_stick = LEFT_JOYSTICK;
