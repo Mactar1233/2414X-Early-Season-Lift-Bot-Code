@@ -49,6 +49,9 @@ lift_control() {
   }
 
   // Lift Down
+  if(Tare_lift_Limit_Switch.getvalue() == 1){
+      lift_state == 0
+  }
   if (master.get_digital(DIGITAL_R2) && down_lock==0) {
     // If the lift is down, bring the lift to max height
     if (lift_state==0)
@@ -64,9 +67,5 @@ lift_control() {
   }
 
   // Set the lift to the current position in the array
-  set_lift_position(lift_heights[lift_state], 100);
-    if(Tare_lift_Limit_Switch.getvalue() = true){
-        zero_lift();
-    }
-
+  set_lift_position(lift_heights[lift_state], 100);{
 }
