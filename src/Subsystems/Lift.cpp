@@ -65,7 +65,7 @@ lift_control() {
 
   // Set the lift to the current position in the array
   set_lift_position(lift_heights[lift_state], 100);
-    if(Tare_lift_Limit_Switch.getvalue() = 1){
+    if(Tare_lift_Limit_Switch.getvalue() = true){
         zero_lift();
     }
 
