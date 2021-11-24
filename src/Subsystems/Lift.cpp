@@ -50,7 +50,7 @@ lift_control() {
 
   // Lift Down
   if(Tare_lift_Limit_Switch.getvalue() == 1){
-      lift_state == 0
+      lift_state == 0;
   }
   if (master.get_digital(DIGITAL_R2) && down_lock==0) {
     // If the lift is down, bring the lift to max height
