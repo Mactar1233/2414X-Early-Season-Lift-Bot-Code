@@ -1,1 +1,0 @@
-extern bool piston_state;
