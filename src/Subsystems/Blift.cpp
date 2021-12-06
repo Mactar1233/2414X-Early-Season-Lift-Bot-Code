@@ -15,14 +15,14 @@ pros::Motor blift(6, MOTOR_GEARSET_36, false, MOTOR_ENCODER_DEGREES);
 pros::ADIDigitalIn Tare_Blift_Limit_Switch ('C')
 
 
-void set_lift(int input)  { lift = input; }
+void set_Blift(int input)  { lift = input; }
 
-void zero_lift()    { lift.tare_position(); }
-int  get_lift()     { return lift.get_position(); }
-int  get_lift_vel() { return lift.get_actual_velocity(); }
+void zero_Blift()    { lift.tare_position(); }
+int  get_Blift()     { return lift.get_position(); }
+int  get_Blift_vel() { return lift.get_actual_velocity(); }
 
 void
-set_lift_position(int target, int speed) {
+set_Blift_position(int target, int speed) {
   lift.move_absolute(target, speed);
 }
 
