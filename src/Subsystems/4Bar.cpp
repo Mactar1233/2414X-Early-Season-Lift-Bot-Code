@@ -1,8 +1,8 @@
 #include "main.h"
 
 
-const int num_of_pos = 3; // Number of lift positions
-const int lift_heights[num_of_pos] = {0, 310, 500}; // Lift Positions
+const static int num_of_pos = 3; // Number of lift positions
+const static int lift_heights[num_of_pos] = {0, 310, 500}; // Lift Positions
 
 
 // Driver Control Variables
