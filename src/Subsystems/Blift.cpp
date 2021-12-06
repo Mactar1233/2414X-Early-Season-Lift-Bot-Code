@@ -37,7 +37,7 @@ Blift_control() {
   if(Tare_Blift_Limit_Switch == 1){
       lift_state == 0
   }
-  if (master.get_digital(DIGITAL_L1) && up_lock==0) {
+  if (master.get_digital(DIGITAL_R2) && up_lock==0) {
     // If lift is at max height, bring it down to 0
     if(lift_state==num_of_pos-1)
       lift_state = 0;
@@ -47,7 +47,7 @@ Blift_control() {
 
     up_lock = 1;
   }
-  else if (!master.get_digital(DIGITAL_L1)) {
+  else if (!master.get_digital(DIGITAL_R2)) {
     up_lock = 0;
   }
  // Set the lift to the current position in the array
