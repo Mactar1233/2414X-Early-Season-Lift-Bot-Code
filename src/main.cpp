@@ -69,7 +69,7 @@ void initialize() {
 
   // Autonomous Selector using LLEMMU
   ez::as::autoSelector.AddAutons({
-    Auton("Autonomous 1\nDoes Something", auto1),
+    Auton("Autonomous 1\nSteals One Mobile Goal from the center", Single_Mid_Mogo),
     Auton("Autonomous 2\nDoes Something Else", auto2),
     Auton("Autonomous 3\nDoes Something More", auto3),
   });

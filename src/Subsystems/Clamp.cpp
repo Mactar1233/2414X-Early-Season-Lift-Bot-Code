@@ -10,3 +10,8 @@ void Piston_Toggle(){
     piston.set_value(piston_state);
     }
 }
+void Piston_Clamp(){
+    piston_state = !piston_state;
+    piston.set_value(piston_state);
+}
+

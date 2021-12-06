@@ -34,7 +34,7 @@ set_lift_position(int target, int speed) {
 void
 lift_control() {
   // Lift Up
-  if (master.get_digital(DIGITAL_R1) && up_lock==0) {
+  if (master.get_digital(DIGITAL_L1) && up_lock==0) {
     // If lift is at max height, bring it down to 0
     if(lift_state==num_of_pos-1)
       lift_state = 0;
@@ -44,7 +44,7 @@ lift_control() {
 
     up_lock = 1;
   }
-  else if (!master.get_digital(DIGITAL_R1)) {
+  else if (!master.get_digital(DIGITAL_L1)) {
     up_lock = 0;
   }
 
@@ -52,7 +52,7 @@ lift_control() {
   if(Tare_lift_Limit_Switch.getvalue() == 1){
       lift_state == 0;
   }
-  if (master.get_digital(DIGITAL_R2) && down_lock==0) {
+  if (master.get_digital(DIGITAL_L2) && down_lock==0) {
     // If the lift is down, bring the lift to max height
     if (lift_state==0)
       lift_state = num_of_pos-1;
@@ -62,7 +62,7 @@ lift_control() {
 
     down_lock = 1;
   }
-  else if (!master.get_digital(DIGITAL_R2)) {
+  else if (!master.get_digital(DIGITAL_L2)) {
     down_lock = 0;
   }
 
