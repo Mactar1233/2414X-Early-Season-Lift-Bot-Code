@@ -165,5 +165,10 @@ void opcontrol() {
     // . . .
     // Put more user control code here!
     // . . .
-
+    Piston_Toggle();
+    Blift_control();
+    Lift_control();
+    if(master.get_digital(DIGITAL_A)){
+      ez::as::autoSelector.CallSelectedAuto();
+    }
     pros::delay(ez::util::DELAY_TIME); // This is used for timer calculations!  Keep this ez::util::DELAY_TIME
